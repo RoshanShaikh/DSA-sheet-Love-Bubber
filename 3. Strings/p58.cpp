@@ -25,7 +25,9 @@ public:
                 count0 = count1 = 0;
             }
         }
-        return ans;
+        if (count0 == 0 && count1 == 0)
+            return ans;
+        return -1;
     }
 };
 
